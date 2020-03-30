@@ -7,7 +7,7 @@ public class AreaCalculator {
 
      public static double area(double radius){
 		if(radius < 0){
-			return -1.0;
+			return -1;
 		}else{
 			double newRadius = (radius * radius);
 			double finalArea = (newRadius * 3.141592);
