@@ -1,7 +1,7 @@
 public class SpeedConverter {
 
     public static void main(String[] args) {
-        toMilesPerHour(50);
+        System.out.println(toMilesPerHour(50));
         printConversion(10.5);
     }
 
