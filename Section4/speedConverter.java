@@ -2,6 +2,7 @@ public class SpeedConverter {
 
     public static void main(String[] args) {
         toMilesPerHour(50);
+        printConversion(10.5);
     }
 
     public static long toMilesPerHour(double kilometersPerHour){
