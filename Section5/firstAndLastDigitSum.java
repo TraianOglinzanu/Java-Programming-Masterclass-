@@ -18,7 +18,7 @@ public class FirstAndLastDigitSum{
 
 		firstDigit = number;
 
-		while(firstDigit >= 0){
+		while(firstDigit >= 10){
 			firstDigit /= 10;
 		}
 
