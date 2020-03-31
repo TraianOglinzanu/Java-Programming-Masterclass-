@@ -24,12 +24,12 @@ public class NumberToWords{
 		int real_number = number;
 
 		 while(number != 0){
-            int remainder = number % 10;
-            reverse = reverse * 10;
-            reverse = reverse + remainder;
-            number = number / 10;
-        }
-        return reverse;
+            		int remainder = number % 10;
+            		reverse = reverse * 10;
+            		reverse = reverse + remainder;
+            		number = number / 10;
+        	}
+        	return reverse;
 	}
 
 	public static void numberToWords(int number){
