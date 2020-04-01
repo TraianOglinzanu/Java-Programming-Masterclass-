@@ -1,28 +1,21 @@
-public class FlourPacker {
+public class LargestPrime{
 
 	public static void main(String[] args) {
-		System.out.println(canPack(1, 0, 5));
+		System.out.println(getLargestPrime(217));
 	}
 
-    public static boolean canPack(int bigCount, int smallCount, int goal) {
+	public static int getLargestPrime(int number){
+		if(number < 0)
+			return -1;
 
-        if ((bigCount < 0)||(smallCount < 0)||(goal < 0)){
-            return false;
-        }
+		int i;
 
-        int remainder = 0;
-
-        for(int i = 0; i * 5<= goal && i <= bigCount; i++){
-        	remainder = goal - i*5;
-        }
-
-        if(smallCount >= remainder)
-        	if(remainder >= 0)
-        		return true;
-        	else
-        		return false;
-
-        else
-        	return false;
-    }
+		for(i = 2; i <= number; i++){
+			if(number % i == 0){
+				number /= i;
+			}
+		}
+		int prime = (i - 1);
+		return prime;
+	}
 }
