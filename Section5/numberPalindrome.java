@@ -12,7 +12,7 @@ public class NumberPalindrome {
             		int remainder = number % 10;
            	 	reverse = reverse * 10;
            	 	reverse = reverse + remainder;
-           		 number = number / 10;
+           		number = number / 10;
        		}
 
         	if(number_original == reverse){
