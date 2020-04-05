@@ -36,5 +36,25 @@ public class Main {
         calculator = new Calculator(floor, carpet);
 
         System.out.println("total = " + calculator.getTotalCost());
+        
+        System.out.println("*******************************");
+
+        ComplexNumber one = new ComplexNumber(1.0D, 1.0D);
+        ComplexNumber number = new ComplexNumber(2.5D, -1.5D);
+
+        one.add(1,1);
+
+        System.out.println("one.real= " + one.getReal());
+        System.out.println("one.imaginery= " + one.getImaginary());
+
+        one.subtract(number);
+
+        System.out.println("one.real= " + one.getReal());
+        System.out.println("one.imaginery= " + one.getImaginary());
+
+        number.subtract(one);
+
+        System.out.println("number.real= " + number.getReal());
+        System.out.println("number.imaginery= " + number.getImaginary());
     }
 }
