@@ -40,7 +40,7 @@ public class Hamburger {
         this.meat = meat;
         this.lettuce = true;
         this.tomato = true;
-        this.mustard = false;
+        this.mustard = true;
         this.onionRings = 2;
     }
 
